@@ -1,2 +1,3 @@
 dist/main.min.css
 scss/
+node_modules/
