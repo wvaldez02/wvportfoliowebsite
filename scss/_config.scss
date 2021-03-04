@@ -1,0 +1,55 @@
+$primary-color: #272727;
+$secondary-color: #FBBC05;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+@mixin transform-105 {
+    transform: scale(1.05);
+}
+
+@function set-text-color($color) {
+    @if (lightness($color) > 40%) {
+        @return #333;
+    } @else {
+        @return #fff;
+    }
+}
+
+@mixin media-sm {
+    @media screen and (min-width: 576px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+
+@mixin media-xl {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin media-xxl {
+    @media screen and (min-width: 1400px) {
+        @content;
+    }
+}
