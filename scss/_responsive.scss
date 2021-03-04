@@ -1,21 +1,53 @@
+@include media-sm {
+    .about__bio {
+        font-size: 1.1rem;
+
+        &-image {
+            height: 60vh;
+         }
+    }
+
+    .certifications {
+        &__bio-image {
+            height: 69vh;
+        }
+
+        &__items {
+            width: 40vw;
+        }
+    }
+
+    .projects {
+        &__bio-image {
+            height: 69vh;
+        }
+
+        &__items {
+            width: 40vw;
+        }
+    }
+}
+
 @include media-md {
     .about__bio {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
 
-            &-image {
-                height: 70vh;
-             }
+        &-image {
+            height: 62vh;
+        }
     }
 
     .certifications {
         &__items {
             grid-template-columns: repeat(2, 1fr);
+            width: 59vw;
         }
     }
 
     .projects {
         &__items {
             grid-template-columns: repeat(2, 1fr);
+            width: 65vw;
         }
     }
 }
@@ -24,10 +56,6 @@
     .certifications {
         &__bio-image {
             height: 70vh;
-        }
-
-        &__items {
-            grid-template-columns: repeat(3, 1fr);
         }
 
         .text-secondary {
@@ -45,10 +73,6 @@
         &__bio-image {
             height: 70vh;
         }
-        
-        &__items {
-            grid-template-columns: repeat(3, 1fr);
-        }
 
         .text-secondary {
             font-size: 3rem;
@@ -58,12 +82,24 @@
 
 @include media-xl {
     .home {
-        padding-top: 70vh;
+        padding-top: 54vh;
+    }
+
+    .about__bio {
+        font-size: 1.28rem;
+
+            &-image {
+                height: 75vh;
+             }
+    }
+
+    .certifications {
+        &__items {
+            width: 48vw;
+        }
     }
 
     .contact {
-        padding-top: 60vh;
-
         &__list {
             grid-template-columns: repeat(2, 1fr);
             justify-content: center;
@@ -104,6 +140,39 @@
 }
 
 @include media-xxl {
-    
+    .home {
+        padding-top: 65vh;
+    }
 
+    .about__bio {
+        font-size: 1.5rem;
+
+            &-image {
+                height: 85vh;
+             }
+    }
+
+    .certifications {
+        &__bio-image {
+            height: 85vh;
+        }
+
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .projects {
+        &__bio-image {
+            height: 85vh;
+        }
+
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .contact {
+        padding-top: 50vh;
+    }
 }
