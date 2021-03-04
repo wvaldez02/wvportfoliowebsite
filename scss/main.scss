@@ -32,8 +32,12 @@ a:hover {
     color: $secondary-color;
 }
 
+.text-tertiary {
+    color: $tertiary-color;
+}
+
 nav.scroll {
-    background-color: #cb793a;
+    background-color: $tertiary-color;
     color: #eef;
 }
 
@@ -56,6 +60,7 @@ main {
         a {
             padding: 0.4rem;
             @include transition-ease;
+            color: $tertiary-color;
     
             &:hover {
                 color: $secondary-color;

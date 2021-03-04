@@ -1,3 +1,4 @@
+/*#F07C42;*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,6 +20,10 @@
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #fff;
+}
+
+.home__name--first {
+  color: #769D1B;
 }
 
 .home__name--last {
@@ -204,7 +209,7 @@
 
 .about .jobs__job h5 {
   margin: 0.3rem 0;
-  color: #cb793a;
+  color: #769D1B;
 }
 
 .about .social-icons {
@@ -496,8 +501,12 @@ a:hover {
   color: #FBBC05;
 }
 
+.text-tertiary {
+  color: #769D1B;
+}
+
 nav.scroll {
-  background-color: #cb793a;
+  background-color: #769D1B;
   color: #eef;
 }
 
@@ -522,6 +531,7 @@ main .social-icons {
 main .social-icons a {
   padding: 0.4rem;
   transition: all 0.5s ease-in-out;
+  color: #769D1B;
 }
 
 main .social-icons a:hover {
