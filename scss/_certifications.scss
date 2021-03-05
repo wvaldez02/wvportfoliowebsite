@@ -2,7 +2,7 @@
     padding-bottom: 2rem;
 
     &__bio-image {
-        height: 72vh;
+        height: 45vh;
         width: 100%;
         background: 
             linear-gradient(
@@ -16,10 +16,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
+        text-align: center;
 
         .text-secondary {
-            font-size: 2rem;
-            margin-bottom: 2rem;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
         }
     }  
     
@@ -54,11 +55,7 @@
         }
     }
 
-    .social-icons {
-        display: flex;
-        flex-direction: column;
-    }
-
+    
     footer {
         transform: 
             rotate(90deg) 

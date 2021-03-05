@@ -1,13 +1,125 @@
-@include media-sm {
-    .about__bio {
-        &-image {
-            height: 60vh;
-         }
+@include media-xsm {
+    .home,
+    .contact {        
+        .social-icons {            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;  
+            left: 0;
+            right: 0;  
+            
+            a {
+                padding: 1rem;
+            }
+        }
     }
+
+    main {
+        .about,
+        .certifications,
+        .projects {
+            .social-icons {
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                justify-content:center;
+
+                a {
+                    padding: .5rem;
+                }
+            }
+
+            footer {
+                transform: 
+                    rotate(90deg) 
+                    translate(-3rem, -5rem);
+            }
+        }
+
+        .about {
+            .jobs {
+                &__job {
+                    h2, h3 {
+                        font-weight: 300;
+                        margin: 0.2rem 0;
+                    }
+                }
+            }
+        }
+    }    
+}
+
+@include media-sm {
+    .home,
+    .contact {
+        .social-icons {        
+            display: flex;
+            flex-direction: row;
+            align-items:flex-start;
+            justify-content: center;          
+        }
+
+        footer {
+            z-index: 1;
+            bottom: 1.5rem;
+        }
+        
+    }
+
+    .contact {
+        &__list {
+            grid-gap: 1.3rem;
+            font-size: 1.3rem;
+        }
+    }
+
+    main {
+        .about,
+        .certifications,
+        .projects {
+            .social-icons {
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                justify-content:center;
+
+                a {
+                    padding: .5rem;
+                }
+            }
+
+            footer {
+                transform: 
+                    rotate(90deg) 
+                    translate(-3rem, -5rem);
+            }
+        }
+
+        .about {
+            &__bio-image {
+                height: 60vh; 
+                
+                .about__bio {
+                    margin-bottom: .5rem;
+                    font-size: 1.1rem;
+
+                    h2 {
+                        font-size: 2rem;
+                    }
+                }
+            }            
+        }
+    }    
 
     .certifications {
         &__bio-image {
-            height: 69vh;
+            height: 60vh;
+
+            .text-secondary {
+                font-size: 2.8rem;
+                margin-bottom: 2rem;
+            }
         }
 
         &__items {
@@ -17,7 +129,12 @@
 
     .projects {
         &__bio-image {
-            height: 69vh;
+            height: 60vh;
+
+            .text-secondary {
+                font-size: 2.8rem;
+                margin-bottom: 2rem;
+              }
         }
 
         &__items {
@@ -27,33 +144,96 @@
 }
 
 @include media-md {
-    .about__bio {
-        font-size: 1.2rem;
+    .home {
+        padding-top: 45vh;
+    }
 
-        &-image {
-            height: 62vh;
+    main {
+        .about {
+            &__bio-image {
+                height: 65vh;
+
+                .about__bio {
+                    font-size: 1.2rem;
+                    h2 {
+                        font-size: 2.2rem;
+                        margin-bottom: 1.5rem;
+                    }
+                }
+            }            
         }
     }
 
     .certifications {
+        &__bio-image {
+            .text-secondary {
+                font-size: 3rem;
+                margin-bottom: 2.2rem;
+            }
+        }
+
         &__items {
-            grid-template-columns: repeat(2, 1fr);
-            width: 59vw;
+            width: 50vw;
         }
     }
 
     .projects {
+        &__bio-image {
+            .text-secondary {
+                font-size: 3rem;
+                margin-bottom: 2.2rem;
+            }
+        }
+        
         &__items {
-            grid-template-columns: repeat(2, 1fr);
-            width: 65vw;
+            width: 60vw;
+        }
+    }
+
+    .contact {
+        padding-top: 45vh;
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2.2rem;
+        }
+
+        &__list {
+            grid-gap: 1.4rem;
+            font-size: 1.4rem;
         }
     }
 }
 
 @include media-lg {
+    .home {
+        padding-top: 48vh;
+    }
+
+    main {
+        .about {
+            &__bio-image {
+                height: 70vh;
+                
+                .about__bio {
+                    width: 65%;
+                    font-size: 1.3rem;
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+                }
+            }            
+        }
+    }
+
     .certifications {
         &__bio-image {
             height: 70vh;
+        }
+
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+            width: 70vw;
         }
 
         .text-secondary {
@@ -72,41 +252,88 @@
             height: 70vh;
         }
 
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+            width: 80vw;
+        }
+
         .text-secondary {
             font-size: 3rem;
+        }
+    }
+
+    .contact {
+        padding-top: 44vh;
+
+        h1 {
+            margin-bottom: 1.8rem;
+        }
+
+        &__list {
+            grid-gap: 1.2rem;
+            font-size: 1.5rem;
         }
     }
 }
 
 @include media-xl {
     .home {
-        padding-top: 54vh;
+        padding-top: 50vh;
     }
 
-    .about__bio {
-        font-size: 1.28rem;
-
-            &-image {
-                height: 75vh;
-             }
+    main {
+        .about {
+            &__bio-image {
+                height: 70vh;
+                
+                .about__bio {
+                    width: 60%;
+                    font-size: 1.2rem;
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+                }
+            }            
+        }
     }
 
     .certifications {
+        &__bio-image {
+            height: 60vh;
+        }
+
         &__items {
-            width: 48vw;
+            grid-template-columns: repeat(2, 1fr);
+            width: 70vw;
+        }
+    }
+
+    .projects {
+        &__bio-image {
+            height: 60vh;
+        }
+
+        &__items {
+            
         }
     }
 
     .contact {
+        padding-top: 42vh;
+
         &__list {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: 1fr;
             justify-content: center;
             align-content: center;
-            grid-gap: 2rem;
-            font-size: 1.5rem;
+            grid-gap: 1.2rem;
+            font-size: 1.7rem;
         }
     }
 
+    
+}
+
+@include media-xxl {
     .menu-btn {
         visibility: hidden;
     }
@@ -135,24 +362,30 @@
     .idiom {
         text-transform: uppercase;
     }
-}
 
-@include media-xxl {
     .home {
-        padding-top: 65vh;
+        padding-top: 55vh;
     }
 
-    .about__bio {
-        font-size: 1.5rem;
+    main {
+        .about {
+            &__bio-image {
+                height: 75vh;
 
-            &-image {
-                height: 85vh;
-             }
+                .about__bio {
+                    width: 70%;
+                    font-size: 1.4rem;
+                    h2 {
+                        font-size: 3rem;
+                    }
+                }
+            }            
+        }
     }
 
     .certifications {
         &__bio-image {
-            height: 85vh;
+            height: 75vh;
         }
 
         &__items {
@@ -162,7 +395,7 @@
 
     .projects {
         &__bio-image {
-            height: 85vh;
+            height: 75vh;
         }
 
         &__items {
@@ -171,6 +404,53 @@
     }
 
     .contact {
-        padding-top: 50vh;
+        padding-top: 45vh;
+    }
+}
+
+@include media-xxxl {
+    .home {
+        padding-top: 65vh;
+    }
+
+    main {
+        .about {
+            &__bio-image {
+                height: 76vh;
+
+                .about__bio {
+                    width: 85%;
+                }
+            }            
+        }
+    }
+
+    .certifications {
+        &__bio-image {
+            height: 76vh;
+        }
+    }
+
+    .projects {
+        &__bio-image {
+            height: 76vh;
+        }
+    }
+
+
+    .contact {
+        padding-top: 60vh;
+
+        h1 {
+            margin-bottom: 3rem;
+        }
+
+        &__list {
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: center;
+            align-content: center;
+            grid-gap: 1rem;
+            font-size: 1.7rem;
+        }
     }
 }

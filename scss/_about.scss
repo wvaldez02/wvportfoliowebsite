@@ -1,9 +1,9 @@
 .about {
     
     &__bio-image {
-        height: 72vh;
+        height: 73vh;
         width: 100%;
-        padding-bottom: 1rem;
+        padding-bottom: .5rem;
         background: 
             linear-gradient(
              to right,
@@ -44,16 +44,5 @@
                 color: $tertiary-color;
             }
         }
-    }
-
-    .social-icons {
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer {
-        transform: 
-            rotate(90deg) 
-            translate(-3rem, -5rem);
     }
 }

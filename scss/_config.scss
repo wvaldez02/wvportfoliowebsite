@@ -61,3 +61,9 @@ $tertiary-color: #769D1B; /*#F07C42;*/
         @content;
     }
 }
+
+@mixin media-xxxl {
+    @media screen and (min-width: 1700px) {
+        @content;
+    }
+}
