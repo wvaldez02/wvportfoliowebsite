@@ -400,10 +400,16 @@
   font-size: 1.3rem;
 }
 
-@media screen and (min-width: 576px) {
+@media only screen and (max-width: 575px) {
   .about__bio {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
+  .about__bio-image {
+    height: 75vh;
+  }
+}
+
+@media screen and (min-width: 576px) {
   .about__bio-image {
     height: 60vh;
   }

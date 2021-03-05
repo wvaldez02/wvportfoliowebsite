@@ -1,7 +1,15 @@
+@include media-xsm {
+    .about__bio {
+        font-size: 1rem;
+
+        &-image {
+            height: 75vh;
+         }
+    }
+}
+
 @include media-sm {
     .about__bio {
-        font-size: 1.1rem;
-
         &-image {
             height: 60vh;
          }
