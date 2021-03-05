@@ -20,16 +20,12 @@
     
     &__bio {
         width: 85%;
-        text-align: center;
-
-        .text-secondary {
-            padding-bottom: 1rem;
-        }
+        text-align:center;
     }
 
     .jobs {
         width: 60vw;
-        margin: 2rem auto 0 auto;
+        margin: 2rem auto;
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2rem;
