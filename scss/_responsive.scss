@@ -365,6 +365,14 @@
 
     .home {
         padding-top: 55vh;
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        &__name {
+            font-size: 5rem;
+        }
     }
 
     main {

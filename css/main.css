@@ -635,6 +635,12 @@
   .home {
     padding-top: 55vh;
   }
+  .home h2 {
+    font-size: 2.5rem;
+  }
+  .home__name {
+    font-size: 5rem;
+  }
   main .about__bio-image {
     height: 75vh;
   }
