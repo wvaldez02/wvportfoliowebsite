@@ -1,9 +1,9 @@
 .about {
-    padding-bottom: 2rem;
-
+    
     &__bio-image {
-        height: 60vh;
+        height: 62vh;
         width: 100%;
+        padding-bottom: 1.5rem;
         background: 
             linear-gradient(
              to right,
@@ -16,14 +16,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-
-        p {
-            margin-bottom: 2rem;
-        }
     }  
     
     &__bio {
-        width: 80%;
+        width: 88%;
         text-align: center;
 
         .text-secondary {
