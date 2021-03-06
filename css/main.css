@@ -354,7 +354,7 @@
 
 .contact {
   height: 100%;
-  padding-top: 48vh;
+  padding-top: 46vh;
   overflow: hidden;
   align-items: center;
   text-align: center;
@@ -373,8 +373,8 @@
   grid-template-columns: 1fr;
   justify-content: center;
   align-content: center;
-  grid-gap: 1.2rem;
-  font-size: 1.2rem;
+  grid-gap: 1rem;
+  font-size: 1.1rem;
 }
 
 @media only screen and (max-width: 575px) {
